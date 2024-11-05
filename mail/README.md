@@ -8,13 +8,22 @@ NON USARE INCLUDES!_
 ---
 
 ### DATI
-- Lista email.
+- Lista email;
+- Chiedere all'utente di inserire l'email.
+
 
 ### ESECUZIONE LOGICA
-- Chiedere all'utente di inserire l'email;
-- Creare Array email;
-- Verificare se è presente l'email utente nella lista che abbiamo.
+
+  trovato = false.
+- Per ogni email della lista
+  Se l'email dell'utente è uguale all'email corrente 
+     trovata = true
+  
 
 
-### STAMPA
-Stampare l'esito della verifica.
+### OUTPUT
+if(trovato) {
+    Ok, puoi entrare
+} else {
+    Non sei registrato
+}

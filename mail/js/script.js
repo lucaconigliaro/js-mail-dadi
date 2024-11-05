@@ -3,19 +3,25 @@
 const listMail = [`luca@gmail.com`, `francesco@gmail.com`, `michele@gmail.com`];
 
 //Chiedere all'utente di inserire l'email
-userMail = prompt(`Inserisci la tua email`);
+const userMail = prompt(`Inserisci la tua email`);
 
 //Verificare se è presente l'email utente nella lista che abbiamo e stampare l'esito della verifica
-let message;
+let isFound = false;
 
 for (let i = 0; i < listMail.length; i++) {
     const curMail = listMail[i];
+    console.log(i, userMail, curMail, isFound);
 
     if (curMail === userMail) {
-        message = (`Utente registrato`);
+        isFound = true;
         break;
-    } else {
-        message = (`Utente non registrato`);
-    }
+    } 
+    
 }
-console.log(message)
+console.log(isFound);
+
+if(isFound) {
+    console.log("Email trovata, puoi entrare");
+} else {
+    console.log("Non sei registrato");
+}
