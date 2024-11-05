@@ -15,8 +15,8 @@ Prima di partire a scrivere codice poniamoci qualche domanda:_
 
 ### ESECUZIONE LOGICA
 - Generiamo un numero random per ciascun giocatore;
-- Se Giocatore1 > CPU = vince;
-- Se Giocatore 1 < CPU = perde;
+- Se Giocatore > CPU = vince;
+- Se Giocatore < CPU = perde;
 - Altrimenti Pareggio.
 
 ### STAMPA
